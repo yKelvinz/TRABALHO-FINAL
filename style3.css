@@ -1,0 +1,547 @@
+    @font-face {
+    font-family: 'Porsche Next';
+    src: url('fonte/PorscheNext-Regular.woff') format('woff');
+    }
+    @font-face {
+    font-family: 'Porsche Next italic';
+    src: url('fonte/PorscheNextTT-Italic.woff') format('woff');
+    }
+    @font-face {
+    font-family: 'Porsche Next bold';
+    src: url('fonte/porsche-next-bold.woff') format('woff');
+    }
+    @font-face {
+    font-family: 'Porsche Next thin';
+    src: url('fonte/PorscheNext-Thin.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Porsche Next thin italic';
+        src: url('fonte/porsche-next-thin-italic.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Porsche Next bold italic';
+        src: url('fonte/porsche-next-bold-italic.woff') format('woff');
+    }
+
+    header{
+        margin: 0;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Porsche Next thin';
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: white;
+        transition: background .5s;
+    }
+
+    body{
+        background-color: #fff;
+        transition: background .5s;
+    }
+
+    body.active{
+        background: #222;
+        color: aliceblue;
+    }
+
+    header a{
+        margin: 0;
+        font-size: larger;
+        margin-inline: 20px;
+        color: #222;
+        text-decoration: none;
+    }
+
+    .header-Elemento.active{
+        color: aliceblue;
+    }
+
+    #header_elemento2.active{
+        color: aliceblue;
+    }
+
+    #header_elemento3.active{
+        color: aliceblue;
+    }
+
+    #header_elemento4.active{
+        color: aliceblue;
+    }
+
+    #header_elemento5.active{
+        color: aliceblue;
+    }
+
+    #header_elemento3.active:hover{
+        color: red;
+    }
+
+    #header_elemento4.active:hover{
+        color: red;
+    }
+
+    #header_elemento5.active:hover{
+        color: red;
+    }
+
+    #header_elemento2.active:hover{
+        color: red;
+    }
+
+    #esq-header{
+        display: flex;
+        position: absolute;
+        left: 60px;
+        align-items: center;
+    }
+
+    #esq-header img{
+        width: 40px;
+    }
+
+    #botao-voltar {
+    margin-right: 40px;
+    scale: 1.5;
+    margin-top: 4px;
+    padding-left: 20px;
+    }
+
+    #dir-header{
+        position: absolute;
+        right: 40px;
+    }
+
+    #botao-dark-mode{
+        width: 60px;
+        height: 30px;
+        border: solid 2px  #222;
+        border-radius: 50px;
+    }
+
+    #botao-dark-mode:hover{
+        cursor: pointer;
+    }
+
+    #botao-dark-mode::before{
+        width: 23.5px;
+        height: 23.5px;
+        background: #222;
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        transition: left .5s;
+    }
+
+    #botao-dark-mode::after{
+        content: 'Modo Escuro';
+        position: absolute;
+        right: 110%;
+        top: -20%;
+        font-size: 15px;
+    }
+
+    #botao-dark-mode.active{
+        border: aliceblue 2px solid;
+    }
+
+    #botao-dark-mode.active::before{
+        background: aliceblue;
+        left: 31.5px;
+    }
+
+    header.active{
+        background: #222;
+        color: #fff;
+    }
+
+    .header-Elemento{
+        cursor: pointer;
+    }
+
+    .header-Elemento:hover{
+        color: red;
+    }
+
+    .bi-arrow-left-square-fill{
+        cursor: pointer;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    #primeira-seçao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1090px;
+        height: 939px;
+        text-align: center;
+    }
+
+    #primeira-seçao h1{
+        font-family: 'Porsche Next thin';
+        font-size: 50px;
+    }
+
+    #primeira-seçao p{
+        font-family: 'Porsche Next';
+        font-size: larger;
+    }
+
+    #cmc-italic{
+        font-family: 'Porsche Next Italic';
+    }
+
+    #segunda-frase{
+        position: relative;
+        left: 6.75%;
+    }
+
+    #terceira-frase{
+        position: relative;
+        left: 4.4px;
+        font-family: 'Porsche Next bold italic';
+    }
+
+    #segunda-seçao{
+        display: flex;
+        width: 100%;
+        height: 662px;
+        margin: 0;
+        align-items: center;
+        justify-items: center;
+        
+    }
+
+    #seg-seç-dir{
+        height: 662px;
+        width: 510px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #seg-seç-title{
+        font-family: 'Porsche Next bold';
+        font-size: 48px;
+    }
+
+    #seg-seç-par{
+        font-family: 'Porsche Next';
+        font-size: larger;
+    }
+
+    #title-Panamera{
+        width: 361.5px;
+        display: inline;
+    }
+
+    .seg-seç-par{
+        width: 361.5px;
+    }
+
+    #terceira-seç {
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/model-series-g2-2nd-panamera-body-sportturismo%C2%B520/normal/af5b8dd2-06e1-11eb-80ce-005056bbdc38;sH;twebp;c1693;gc/porsche-normal.webp");
+        position: relative;
+        width: 100%;
+        height: 931px;
+        margin: 70px;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+
+    #tit-design{
+        z-index: 1;
+        font-family: 'Porsche Next bold';
+        font-size: 60px;
+    }
+
+    #texto-design{
+        font-family: 'Porsche Next thin';
+        color: white;
+        position: absolute;
+        top: 18%;
+        left: 15%;
+    } 
+
+    #texto-baixo-design{
+        width: 300px;
+        margin-top: 30px;
+
+    }
+
+    #quarta-seçao{
+        width: 100%;
+        height: 2990px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Porsche Next';
+    }
+
+    #tit-desempenho{
+        font-family: 'Porsche Next bold';
+    }
+
+    #cmc-Desempenho{
+        width: 800px;
+        margin-left: 170px;
+    }
+
+    #suspensao{
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/g2-2nd-panamera-design-exterieur-03/normal/8d147235-0494-11eb-80ce-005056bbdc38;sK;twebp;c1692;gc/porsche-normal.webp");
+        margin-top: 50px;
+        color: white;
+        width: 100%;
+        height: 960px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #texto-susp{
+        height: 568px;
+        width: 384px;
+        margin-right: 116px;
+    }
+
+    #tit-susp{
+        font-family: 'Porsche Next bold';
+    }
+
+    #par-susp{
+        font-family: 'Porsche Next thin';
+    }
+
+    #freios{
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/g2-2nd-panamera-performance-brakes-02/normal/ea50277e-0d5e-11eb-80ce-005056bbdc38;sK;twebp;c1692;gc/porsche-normal.webp");
+        color: white;
+        width: 100%;
+        height: 960px;
+        display: flex;
+        align-items: center;
+    }
+
+    #tit-frei{
+        font-family: 'Porsche Next bold';
+    }
+
+    #par-frei{
+        font-family: 'Porsche Next thin';
+        padding-top: 17px;
+    }
+
+    #text-frei{
+        height: 600px;
+        width: 500px;
+        margin-left: 150px;
+        margin-top: 170px;
+    }
+
+    #container-specs-carro{
+        width: 100%;
+        margin-top: 100px;
+        height: 200px;
+        background-color: #e0e0e0;
+        transition: background .5s;
+    }
+
+    #container-specs-carro.active{
+        background: #333;
+    }
+
+    #nome-carro{
+        font-size: 60px;
+    }
+
+    #container-infos-carro{
+        margin-left: 100px;
+        width: 950px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .linha-vertical {
+        height: 20px;
+         border-left: 2px solid;
+     }
+
+     #infos-carro-container{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .info-carro-tecnicos{
+        font-family: 'Porsche Next bold';
+        padding-inline: 100px;
+        margin-right: 90px;
+     }
+
+     #dados-técnicos{
+        width: 800px;
+        height: 1300px;
+        margin: 100px;
+     }
+
+     #container-infos-dad-tec{
+        width: 700px;
+        height: 80%;
+     }
+
+     #container-infos-dad-tec{
+        margin-top: 30px;
+     }
+
+     .info-dad-tec{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        height: 20px;
+     }
+
+     .esq-dad-tec{
+        font-family: 'Porsche Next thin';
+        font-size: larger;
+     }
+     .dir-dad-tec{
+        font-family: 'Porsche Next bold';
+        font-size: larger;
+        position: absolute;
+        padding-left: 500px;
+     }
+
+     #quinta-seçao{
+        width: 100%;
+        height: 3990px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Porsche Next';
+     }
+
+     #cmc-Conforto{
+        width: 800px;
+        margin-left: 170px;
+     }
+
+     #interior{
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/g2-2nd-panamera-comfort-seats-01/normal/71f88aeb-0247-11eb-80ce-005056bbdc38;sK;twebp;c1692;gc/porsche-normal.webp");
+        margin-top: 50px;
+        color: white;
+        height: 1000px;
+        width: 100%;
+        height: 1960px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-size: cover;
+        background-position: center;
+     }
+
+     #texto-int{
+        height: 568px;
+        width: 784px;
+        margin-right: 966px;
+     }
+
+     #bancos-traseiros{
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/g2-2nd-panamera-comfort-seats-02/normal/82dff56c-0247-11eb-80ce-005056bbdc38;sK;twebp;c1692;gc/porsche-normal.webp");
+        color: white;
+        width: 100%;
+        height: 960px;
+        display: flex;
+        align-items: center;
+    }
+
+    #text-trase{
+        height: 568px;
+        width: 684px;
+        margin-left: 150px;
+    }
+
+    #porta-malas{
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/g2-2nd-panamera-comfort-trunk/normal/96e87c1d-0247-11eb-80ce-005056bbdc38;sK;twebp;c1692;gc/porsche-normal.webp");
+        color: white;
+        width: 100%;
+        height: 960px;
+        display: flex;
+        align-items: center;
+    }
+
+    #text-por-malas{
+        height: 668px;
+        width: 684px;
+        margin-right: 966px;
+    }
+
+    #botoes-voltar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .botao-voltar-começo-link.active{
+        border: aliceblue solid 1px;
+        color: aliceblue;
+    }
+
+    #botao-voltar-começo-link2.active{
+        border: aliceblue solid 1px;
+        color: aliceblue;
+    }
+
+    .botao-voltar-começo-link:hover{
+        background: red;
+    }
+
+    .botao-voltar-começo-link{
+        text-decoration: none;
+        color: #222;
+        font-family: 'Porsche Next';
+        border: #333 solid 1px;
+        width: 160px;
+        height: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: background .2s;
+    }
+
+    footer{
+        background-color: #191f22;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+
+    footer p{
+        position: relative;
+        font-family: 'Porsche Next thin';
+        color: #fff;
+     }
